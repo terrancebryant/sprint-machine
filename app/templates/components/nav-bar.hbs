@@ -1,0 +1,11 @@
+
+{{#if session.isAuthenticated}}
+  <span class="username">Logged in as {{session.currentUser.displayName}}</span>
+
+  <div class="avatar"><img src="{{session.currentUser.photoURL}}" alt=""></div>
+
+  <button {{action signOut}}>Sign out</button>
+
+{{else}}
+  <button {{action signIn "twitter"}}>Sign in with Twitter</button>
+{{/if}}

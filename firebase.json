@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "firebase": "my-ember-cli-app",
+    "public": "dist",
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }]
+  }
+}

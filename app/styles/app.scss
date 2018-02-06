@@ -1,0 +1,24 @@
+@import "normalize";
+@import "variables";
+
+.nav-bar {
+  display: flex;
+  background:$green;
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px 20px;
+  color: $white;
+
+  .avatar {
+    img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .username {
+    align-self: center;
+  }
+}
